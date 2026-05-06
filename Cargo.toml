@@ -1,0 +1,19 @@
+[package]
+name = "nightscout"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+license = "AGPL-3.0-only"
+description = "Opionionated Rust client for the Nightscout v3 API."
+
+[dependencies]
+anyhow = "1.0.102"
+thiserror = "2.0.18"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+serde_with = { version = "3.18.0", features = ["chrono_0_4", "json", "macros"] }
+chrono = { version = "0.4.44", features = ["serde"] }
+rust_decimal = { version = "1.41.0", features = ["serde-with-arbitrary-precision", "serde-with-str"] }
+rust_decimal_macros = "1.40.0"
+reqwest = { version = "0.12.28", default-features = false, features = ["blocking", "json", "rustls-tls"] }
+secrecy = { version = "0.10", features = ["serde"] }

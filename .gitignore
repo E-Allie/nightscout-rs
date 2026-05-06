@@ -1,0 +1,8 @@
+/target
+/Cargo.lock
+/flake.nix
+/flake.lock
+.direnv/
+**/*.swp
+*.tmp
+.DS_Store
